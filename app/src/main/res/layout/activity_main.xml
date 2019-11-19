@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/barra_topo_tela_inicial"
+        android:layout_width="430dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toTopOf="@+id/fundo_texto_tela_inicial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/barra_inferior_tela_inicial"
+        android:layout_width="430dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundo_texto_tela_inicial"
+        app:srcCompat="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/fundo_texto_tela_inicial"
+        android:layout_width="409dp"
+        android:layout_height="575dp"
+        app:layout_constraintBottom_toTopOf="@+id/barra_inferior_tela_inicial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_tela_inicial"
+        app:srcCompat="?android:attr/colorControlActivated" />
+
+    <TextView
+        android:id="@+id/texto_titulo_coletor"
+        android:layout_width="375dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Coletor de Dados Inventário Florestal"
+        android:textAlignment="center"
+        android:textSize="58sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fundo_texto_tela_inicial" />
+
+    <Button
+        android:id="@+id/tela_inicial_botao_coletar_dados"
+        android:layout_width="279dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:width="2dp"
+        android:angle="45"
+        android:backgroundTint="#005A4B4B"
+        android:backgroundTintMode="add"
+        android:color="@android:color/background_dark"
+        android:lineSpacingExtra="12sp"
+        android:radius="10dp"
+        android:text="Coletar Dados"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_titulo_coletor" />
+
+    <Button
+        android:id="@+id/tela_inicial_botao_importar_dados"
+        android:layout_width="279dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:width="2dp"
+        android:angle="45"
+        android:backgroundTint="#005A4B4B"
+        android:backgroundTintMode="add"
+        android:color="@android:color/background_dark"
+        android:lineSpacingExtra="12sp"
+        android:radius="10dp"
+        android:text="Importar Dados"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tela_inicial_botao_coletar_dados" />
+
+    <Button
+        android:id="@+id/tela_inicial_botao_sair"
+        android:layout_width="279dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:width="2dp"
+        android:angle="45"
+        android:backgroundTint="#005A4B4B"
+        android:backgroundTintMode="add"
+        android:color="@android:color/background_dark"
+        android:lineSpacingExtra="12sp"
+        android:radius="10dp"
+        android:text="Salvar"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tela_inicial_botao_importar_dados" />
+
+</android.support.constraint.ConstraintLayout>
